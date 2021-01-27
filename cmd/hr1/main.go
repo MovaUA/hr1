@@ -11,14 +11,11 @@ import (
 
 // Complete the camelcase function below.
 func camelcase(s string) int32 {
-	var words int32
+	words := int32(1)
 	for _, r := range s {
 		if unicode.IsUpper(r) {
 			words++
 		}
-	}
-	if len(s) > 0 {
-		words++
 	}
 	return words
 }
